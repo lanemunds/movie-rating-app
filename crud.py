@@ -8,13 +8,17 @@ def create_user(email, password):
 
     return user
 
+def create_movie(title, overview, release_date, poster_path):
+    
+    movie = Movie(title = title, overview = overview, release_date = release_date, poster_path = poster_path)
+
+    return movie
 
 
-
-
-
-
-
+def create_rating(user, movie, score):
+    
+    rating = Rating(user = user, movie = movie, score = score)
+    return rating
 
 
 
