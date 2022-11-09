@@ -23,7 +23,8 @@ def create_rating(user, movie, score):
     rating = Rating(user = user, movie = movie, score = score)
     return rating
 
-
+def get_movie_by_id(movie_id):
+    return Movie.get(movie_id)
 
 
 

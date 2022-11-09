@@ -16,6 +16,11 @@ app.jinja_env.undefined = StrictUndefined
 def homepage():
     return render_template('homepage.html')
 
+@app.route('/movies/<movie_id>')
+def movieinfo(movie_id):
+    movie = crud.get_movie_by_id(movie_id)
+    return render_template('movie_details.html',movie = movie)
+
 @app.route("/movies")
 def all_movies():
     movies = crud.get_movies()
