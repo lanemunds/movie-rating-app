@@ -17,7 +17,7 @@ def homepage():
     return render_template('homepage.html')
 
 @app.route('/movies/<movie_id>')
-def movieinfo(movie_id):
+def movie_info(movie_id):
     movie = crud.get_movie_by_id(movie_id)
     return render_template('movie_details.html',movie = movie)
 
@@ -26,6 +26,17 @@ def all_movies():
     movies = crud.get_movies()
     
     return render_template("all_movies.html", movies=movies)
+
+@app.route('/users/<user_id>')
+def user_info(user_id):
+    user = crud.get_user_by_id(user_id)
+    return render_template("user_details.html",user = user)
+
+@app.route("/users")
+def all_users():
+    users = crud.get_users()
+    
+    return render_template("all_users.html", users=users)
 
 
 if __name__ == "__main__":

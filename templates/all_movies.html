@@ -3,7 +3,7 @@
 <h1>All Movies</h1>
 <ul>
 {%for movie in movies%}
-  <li><a href= "/movies.{{movie.movie_id}}"> {{movie.title}}</li>
+  <li><a href= "/movies/{{movie.movie_id}}"> {{movie.title}}</li>
     {%endfor%} 
 </ul>
 {% endblock %}
