@@ -46,12 +46,13 @@ def register_user():
     user = crud.get_user_by_email(email)
     if user:
         flash("Account with that email already exists. Please log in or try a different email")
+        return redirect('/create_account')
     else:
         user = crud.create_user(email,password)
         db.session.add(user)
         db.session.commit()
         flash("Account created! Please log in.")
-    return redirect('/')    
+    return redirect('/loginpage')    
 
 @app.route("/login", methods = ['POST'])
 def login():

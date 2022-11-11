@@ -3,7 +3,12 @@
 <h1>All Movies</h1>
 <section class="movies">
   {%for movie in movies%}
-  <a class="btn btn-dark mov" href="/movies/{{movie.movie_id}}">
-    {{movie.title}} {%endfor%} {% endblock %}
+<div class="col-2 movblock">
+  <h5>{{movie.title}}</h5>
+  <a href="/movies/{{movie.movie_id}}">
+  <img class = "smlpic" src={{movie.poster_path}} alt="">
+</a>
+  </div>
+  {%endfor%} {% endblock %}
   </a>
 </section>

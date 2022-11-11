@@ -11,6 +11,34 @@ img{
     height: 400px;
     width: 300px;
 }
-.mov{
-    border: 5px solid gray;
+
+.smlpic{
+    height: 80%;
+    width: 100%;
+  
+}
+.movblock{
+    margin: 10px;
+    border: 5px solid darkgray;
+    background-color: black;
+}
+form{
+    width: 100%;
+    border: 5px solid black;
+    
+}
+.create-acc{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+   
+}
+.words{
+    color: black;
+
+}
+.logged-in{
+    display: flex;
+    justify-content: end;
+    width: 100%;
 }

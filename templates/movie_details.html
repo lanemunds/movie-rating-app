@@ -4,6 +4,11 @@ endblock %} {% block body %}
 
 <p>{{ movie.overview }}</p>
 {% if session.get('user_email') %}
+<h2>Have you seen this movie?</h2>
+<div class="mb-3 form-check form-switch">
+  <input class="form-check-input" type="checkbox" />
+  <label for="">Yes</label>
+</div>
 <h2>Rate this movie</h2>
 <form action="/movies/{{ movie.movie_id }}/ratings" method="POST">
   <p>
