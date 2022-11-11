@@ -108,6 +108,12 @@ def logout():
 def login_page():
     return render_template("login.html")
 
+@app.route("/create_account")
+def create_account_page():
+    return render_template("create_account.html")
+
+
+
 if __name__ == "__main__":
     connect_to_db(app)
     app.run(port= 8000, debug=True)
