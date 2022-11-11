@@ -3,7 +3,7 @@
     <h1>All Users</h1>
     <ul>
     {%for user in users%}
-      <li><a href= "/users/{{user.user_id}}"> {{user.email}}</li>
+      <li><a class = "btn btn-dark" href= "/users/{{user.user_id}}"> {{user.email}}</li>
         {%endfor%} 
     </ul>
     {% endblock %}

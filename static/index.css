@@ -1,0 +1,13 @@
+.movies{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+body{
+    background-color: grey;
+    color: whitesmoke;
+}
+img{
+    height: 400px;
+    width: 300px;
+}
