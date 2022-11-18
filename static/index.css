@@ -42,3 +42,14 @@ form{
     justify-content: end;
     width: 100%;
 }
+.users{
+  padding: 2rem;
+  margin: 3rem;
+    
+}
+.userspage{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
